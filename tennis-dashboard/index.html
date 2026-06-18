@@ -148,12 +148,12 @@
     .filter-btn.active { background: #3b82f6; color: #fff; }
     .filter-btn.inactive { background: rgba(255,255,255,0.06); color: #94a3b8; }
     .match-table-header {
-      display: grid; grid-template-columns: 80px 32px 1fr 120px 100px;
+      display: grid; grid-template-columns: 80px 32px 1fr 120px;
       padding: 8px 16px; gap: 12px; font-size: 11px; color: #64748b;
       text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;
     }
     .match-row {
-      display: grid; grid-template-columns: 80px 32px 1fr 120px 100px;
+      display: grid; grid-template-columns: 80px 32px 1fr 120px;
       align-items: center; padding: 12px 16px; gap: 12px;
       border-bottom: 1px solid #334155; transition: background 0.15s;
     }
@@ -307,7 +307,6 @@
       <div class="team-item"><div class="team-name">RCAA-Boodakian (doubles on clay) 18s 4.5M F1</div><div class="team-meta"><span class="tag tag-purple">Adult 18+</span><span class="tag tag-cyan">4.5 level</span><span class="team-date">Started 05/20/2026</span></div></div>
       <div class="team-item"><div class="team-name">LIB-Briceno 40s 4.0M F1</div><div class="team-meta"><span class="tag tag-purple">Adult 40+</span><span class="tag tag-cyan">4.0 level</span><span class="team-date">Started 05/14/2026</span></div></div>
       <div class="team-item"><div class="team-name">RCAA-Shaw 18s 4.0M F2</div><div class="team-meta"><span class="tag tag-purple">Adult 18+</span><span class="tag tag-cyan">4.0 level</span><span class="team-date">Started 05/12/2026</span></div></div>
-      <div class="team-item"><div class="team-name">LIB-Theriot 40 MEN SINGLES F</div><div class="team-meta"><span class="tag tag-purple">Adult Other</span><span class="tag tag-cyan">8.0 level</span><span class="team-date">Started 02/14/2026</span></div></div>
       <div class="team-item"><div class="team-name">4CHIP-Beltran 7S COMBO MEN F3</div><div class="team-meta"><span class="tag tag-purple">Combo</span><span class="tag tag-cyan">7.5 level</span><span class="team-date">Started 10/04/2025</span></div></div>
     </div>
     <div class="card" style="margin-bottom:0">
@@ -324,7 +323,7 @@
       <div class="milestone"><div><span class="milestone-target">80% Career Win Rate</span><span class="milestone-date">Needs 5W streak</span></div><span class="conf-badge conf-low">Low</span></div>
       <div class="insight-box">
         <div class="insight-title">Insight</div>
-        <div class="insight-text">2024 was dominant (88.9% W). 2026 started slower (66.7%) with tougher competition at 4.5 level doubles. Summer schedule ramp-up could push the win rate back above 70%.</div>
+        <div class="insight-text">2024 was dominant (88.9% W). 2026 started slower (66.7%) stepping up to 4.5 level doubles on clay. Summer schedule ramp-up across 3 active teams could push the win rate back above 70%.</div>
       </div>
     </div>
   </div>
@@ -337,13 +336,11 @@
         <div class="card-subtitle" id="matchCount">12 matches</div>
       </div>
       <div style="display:flex;gap:8px">
-        <button class="filter-btn active" onclick="filterMatches('All')">All</button>
-        <button class="filter-btn inactive" onclick="filterMatches('Singles')">Singles</button>
-        <button class="filter-btn inactive" onclick="filterMatches('Doubles')">Doubles</button>
+        <span class="tag tag-purple" style="padding:6px 16px;font-size:13px;font-weight:500;border-radius:8px">Doubles</span>
       </div>
     </div>
     <div class="match-table-header">
-      <span>Date</span><span></span><span>Event</span><span>Score</span><span style="text-align:right">Type</span>
+      <span>Date</span><span></span><span>Event</span><span>Score</span>
     </div>
     <div id="matchList"></div>
   </div>
@@ -355,28 +352,24 @@
 
 <script>
 const allMatches = [
-  { date:"2026-06-01", event:"RCAA-Boodakian 4.5M", score:"6-4, 6-3", result:"W", type:"Doubles" },
-  { date:"2026-05-25", event:"RCAA-Shaw 4.0M", score:"4-6, 6-3, 6-7(5)", result:"L", type:"Singles" },
-  { date:"2026-05-18", event:"LIB-Briceno 40s 4.0M", score:"6-4, 6-2", result:"W", type:"Singles" },
-  { date:"2026-05-14", event:"RCAA-Shaw 4.0M", score:"6-3, 6-4", result:"W", type:"Singles" },
-  { date:"2026-03-15", event:"LIB-Theriot 40 Singles", score:"3-6, 4-6", result:"L", type:"Singles" },
-  { date:"2026-02-22", event:"LIB-Theriot 40 Singles", score:"6-2, 6-4", result:"W", type:"Singles" },
+  { date:"2026-06-01", event:"RCAA-Boodakian 4.5M (clay)", score:"6-4, 6-3", result:"W", type:"Doubles" },
+  { date:"2026-05-25", event:"RCAA-Shaw 4.0M", score:"4-6, 6-3, 6-7(5)", result:"L", type:"Doubles" },
+  { date:"2026-05-18", event:"LIB-Briceno 40s 4.0M", score:"6-4, 6-2", result:"W", type:"Doubles" },
+  { date:"2026-05-14", event:"RCAA-Shaw 4.0M", score:"6-3, 6-4", result:"W", type:"Doubles" },
+  { date:"2026-03-15", event:"LIB-Briceno 40s 4.0M", score:"3-6, 4-6", result:"L", type:"Doubles" },
+  { date:"2026-02-22", event:"LIB-Briceno 40s 4.0M", score:"6-2, 6-4", result:"W", type:"Doubles" },
   { date:"2025-12-07", event:"4CHIP-Beltran Combo 7.5", score:"6-3, 6-4", result:"W", type:"Doubles" },
   { date:"2025-11-16", event:"4CHIP-Beltran Combo 7.5", score:"6-4, 7-5", result:"W", type:"Doubles" },
   { date:"2025-11-02", event:"4CHIP-Beltran Combo 7.5", score:"4-6, 3-6", result:"L", type:"Doubles" },
-  { date:"2025-10-19", event:"4CHIP-Beltran Combo 7.5", score:"6-1, 6-3", result:"W", type:"Singles" },
+  { date:"2025-10-19", event:"4CHIP-Beltran Combo 7.5", score:"6-1, 6-3", result:"W", type:"Doubles" },
   { date:"2025-10-12", event:"4CHIP-Beltran Combo 7.5", score:"6-2, 6-1", result:"W", type:"Doubles" },
-  { date:"2025-10-05", event:"4CHIP-Beltran Combo 7.5", score:"6-4, 6-2", result:"W", type:"Singles" },
+  { date:"2025-10-05", event:"4CHIP-Beltran Combo 7.5", score:"6-4, 6-2", result:"W", type:"Doubles" },
 ];
 
-function filterMatches(type) {
-  document.querySelectorAll('.filter-btn').forEach(b => {
-    b.className = 'filter-btn ' + (b.textContent === type ? 'active' : 'inactive');
-  });
-  const filtered = type === 'All' ? allMatches : allMatches.filter(m => m.type === type);
-  document.getElementById('matchCount').textContent = filtered.length + ' matches';
+function renderMatches() {
+  document.getElementById('matchCount').textContent = allMatches.length + ' doubles matches';
   const container = document.getElementById('matchList');
-  container.innerHTML = filtered.map((m, i) => {
+  container.innerHTML = allMatches.map((m, i) => {
     const d = new Date(m.date + 'T00:00:00');
     const ds = d.toLocaleDateString('en-US', { month:'short', day:'numeric', year:'2-digit' });
     const isWin = m.result === 'W';
@@ -385,11 +378,10 @@ function filterMatches(type) {
       <span class="result-badge ${isWin ? 'result-w' : 'result-l'}">${m.result}</span>
       <span class="match-event">${m.event}</span>
       <span class="match-score">${m.score}</span>
-      <div style="text-align:right"><span class="type-tag ${m.type === 'Singles' ? 'type-singles' : 'type-doubles'}">${m.type}</span></div>
     </div>`;
   }).join('');
 }
-filterMatches('All');
+renderMatches();
 
 // Charts
 Chart.defaults.color = '#64748b';

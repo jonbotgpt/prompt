@@ -15,7 +15,6 @@ export const teams = [
   { name: "RCAA-Boodakian (doubles on clay) 18s 4.5M F1", type: "Adult 18+", section: "Midwest", rating: 4.5, matchStart: "05/20/2026" },
   { name: "LIB-Briceno 40s 4.0M F1", type: "Adult 40+", section: "Midwest", rating: 4.0, matchStart: "05/14/2026" },
   { name: "RCAA-Shaw 18s 4.0M F2", type: "Adult 18+", section: "Midwest", rating: 4.0, matchStart: "05/12/2026" },
-  { name: "LIB-Theriot 40 MEN SINGLES F", type: "Adult Other", section: "Midwest", rating: 8.0, matchStart: "02/14/2026" },
   { name: "4CHIP-Beltran 7S COMBO MEN F3", type: "Combo", section: "Midwest", rating: 7.5, matchStart: "10/04/2025" },
 ];
 
@@ -33,18 +32,18 @@ export const careerRecord = {
 };
 
 export const matches = [
-  { date: "2026-06-01", opponent: "Opponent", type: "Doubles", event: "RCAA-Boodakian 4.5M", score: "6-4, 6-3", result: "W" },
-  { date: "2026-05-25", opponent: "Opponent", type: "Singles", event: "RCAA-Shaw 4.0M", score: "4-6, 6-3, 6-7(5)", result: "L" },
-  { date: "2026-05-18", opponent: "Opponent", type: "Singles", event: "LIB-Briceno 40s 4.0M", score: "6-4, 6-2", result: "W" },
-  { date: "2026-05-14", opponent: "Opponent", type: "Singles", event: "RCAA-Shaw 4.0M", score: "6-3, 6-4", result: "W" },
-  { date: "2026-03-15", opponent: "Opponent", type: "Singles", event: "LIB-Theriot 40 Singles", score: "3-6, 4-6", result: "L" },
-  { date: "2026-02-22", opponent: "Opponent", type: "Singles", event: "LIB-Theriot 40 Singles", score: "6-2, 6-4", result: "W" },
-  { date: "2025-12-07", opponent: "Opponent", type: "Doubles", event: "4CHIP-Beltran Combo 7.5", score: "6-3, 6-4", result: "W" },
-  { date: "2025-11-16", opponent: "Opponent", type: "Doubles", event: "4CHIP-Beltran Combo 7.5", score: "6-4, 7-5", result: "W" },
-  { date: "2025-11-02", opponent: "Opponent", type: "Doubles", event: "4CHIP-Beltran Combo 7.5", score: "4-6, 3-6", result: "L" },
-  { date: "2025-10-19", opponent: "Opponent", type: "Singles", event: "4CHIP-Beltran Combo 7.5", score: "6-1, 6-3", result: "W" },
-  { date: "2025-10-12", opponent: "Opponent", type: "Doubles", event: "4CHIP-Beltran Combo 7.5", score: "6-2, 6-1", result: "W" },
-  { date: "2025-10-05", opponent: "Opponent", type: "Singles", event: "4CHIP-Beltran Combo 7.5", score: "6-4, 6-2", result: "W" },
+  { date: "2026-06-01", event: "RCAA-Boodakian 4.5M (clay)", score: "6-4, 6-3", result: "W" },
+  { date: "2026-05-25", event: "RCAA-Shaw 4.0M", score: "4-6, 6-3, 6-7(5)", result: "L" },
+  { date: "2026-05-18", event: "LIB-Briceno 40s 4.0M", score: "6-4, 6-2", result: "W" },
+  { date: "2026-05-14", event: "RCAA-Shaw 4.0M", score: "6-3, 6-4", result: "W" },
+  { date: "2026-03-15", event: "LIB-Briceno 40s 4.0M", score: "3-6, 4-6", result: "L" },
+  { date: "2026-02-22", event: "LIB-Briceno 40s 4.0M", score: "6-2, 6-4", result: "W" },
+  { date: "2025-12-07", event: "4CHIP-Beltran Combo 7.5", score: "6-3, 6-4", result: "W" },
+  { date: "2025-11-16", event: "4CHIP-Beltran Combo 7.5", score: "6-4, 7-5", result: "W" },
+  { date: "2025-11-02", event: "4CHIP-Beltran Combo 7.5", score: "4-6, 3-6", result: "L" },
+  { date: "2025-10-19", event: "4CHIP-Beltran Combo 7.5", score: "6-1, 6-3", result: "W" },
+  { date: "2025-10-12", event: "4CHIP-Beltran Combo 7.5", score: "6-2, 6-1", result: "W" },
+  { date: "2025-10-05", event: "4CHIP-Beltran Combo 7.5", score: "6-4, 6-2", result: "W" },
 ];
 
 export const ratingHistory = [
