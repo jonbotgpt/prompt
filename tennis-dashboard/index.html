@@ -148,15 +148,19 @@
     .filter-btn.active { background: #3b82f6; color: #fff; }
     .filter-btn.inactive { background: rgba(255,255,255,0.06); color: #94a3b8; }
     .match-table-header {
-      display: grid; grid-template-columns: 80px 32px 1fr 120px;
+      display: grid; grid-template-columns: 80px 32px 1fr 1fr 1fr 100px;
       padding: 8px 16px; gap: 12px; font-size: 11px; color: #64748b;
       text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;
     }
     .match-row {
-      display: grid; grid-template-columns: 80px 32px 1fr 120px;
+      display: grid; grid-template-columns: 80px 32px 1fr 1fr 1fr 100px;
       align-items: center; padding: 12px 16px; gap: 12px;
       border-bottom: 1px solid #334155; transition: background 0.15s;
     }
+    .match-partner { font-size: 13px; color: #94a3b8; }
+    .match-partner .rating { font-size: 11px; color: #64748b; }
+    .match-opponents { font-size: 13px; color: #94a3b8; }
+    .match-opponents .rating { font-size: 11px; color: #64748b; }
     .match-row:hover { background: rgba(255,255,255,0.05); }
     .match-row:nth-child(odd) { background: rgba(255,255,255,0.02); }
     .match-row:nth-child(odd):hover { background: rgba(255,255,255,0.05); }
@@ -212,16 +216,16 @@
         </div>
         <div class="badge badge-green">
           <div class="badge-label">Dynamic</div>
-          <div class="badge-value">3.8784</div>
-          <div class="badge-sub">6/12/2026</div>
+          <div class="badge-value">3.9903</div>
+          <div class="badge-sub">6/25/2026</div>
         </div>
       </div>
     </div>
     <div class="rating-meter">
       <div class="rating-meter-label">4.0 Rating Range (3.5001 - 4.0000)</div>
       <div class="meter-track">
-        <div class="meter-fill" style="width:75.6%"></div>
-        <div class="meter-marker" style="left:75.6%"></div>
+        <div class="meter-fill" style="width:98%"></div>
+        <div class="meter-marker" style="left:98%"></div>
       </div>
     </div>
     <a href="https://www.tennisrecord.com/adult/profile.aspx?playername=Jon%20Caldwell" target="_blank" class="header-link">View on TennisRecord.com &#x2192;</a>
@@ -229,11 +233,11 @@
 
   <!-- Stats -->
   <div class="stats-grid">
-    <div class="stat-card"><div class="accent" style="background:linear-gradient(90deg,#10b981,transparent)"></div><div class="stat-label">Career Record</div><div class="stat-value">20-6</div><div class="stat-sub">76.9% win rate</div></div>
-    <div class="stat-card"><div class="accent" style="background:linear-gradient(90deg,#3b82f6,transparent)"></div><div class="stat-label">2026 Record</div><div class="stat-value">4-2</div><div class="stat-sub">66.7% in 6 matches</div></div>
-    <div class="stat-card"><div class="accent" style="background:linear-gradient(90deg,#8b5cf6,transparent)"></div><div class="stat-label">Career Sets</div><div class="stat-value">41-16</div><div class="stat-sub">71.9% set win rate</div></div>
-    <div class="stat-card"><div class="accent" style="background:linear-gradient(90deg,#06b6d4,transparent)"></div><div class="stat-label">Career Games</div><div class="stat-value">290-201</div><div class="stat-sub">59.1% game win rate</div></div>
-    <div class="stat-card"><div class="accent" style="background:linear-gradient(90deg,#f59e0b,transparent)"></div><div class="stat-label">Total Matches</div><div class="stat-value">26</div><div class="stat-sub">Since 2024</div></div>
+    <div class="stat-card"><div class="accent" style="background:linear-gradient(90deg,#10b981,transparent)"></div><div class="stat-label">Career Record</div><div class="stat-value">21-6</div><div class="stat-sub">77.8% win rate</div></div>
+    <div class="stat-card"><div class="accent" style="background:linear-gradient(90deg,#3b82f6,transparent)"></div><div class="stat-label">2026 Record</div><div class="stat-value">5-2</div><div class="stat-sub">71.4% in 7 matches</div></div>
+    <div class="stat-card"><div class="accent" style="background:linear-gradient(90deg,#8b5cf6,transparent)"></div><div class="stat-label">Career Sets</div><div class="stat-value">43-16</div><div class="stat-sub">72.9% set win rate</div></div>
+    <div class="stat-card"><div class="accent" style="background:linear-gradient(90deg,#06b6d4,transparent)"></div><div class="stat-label">Career Games</div><div class="stat-value">298-204</div><div class="stat-sub">59.4% game win rate</div></div>
+    <div class="stat-card"><div class="accent" style="background:linear-gradient(90deg,#f59e0b,transparent)"></div><div class="stat-label">Total Matches</div><div class="stat-value">27</div><div class="stat-sub">Since 2024</div></div>
   </div>
 
   <!-- Year-by-Year -->
@@ -247,10 +251,10 @@
           <th class="slate">Sets W-L</th><th class="slate">Set%</th><th class="slate">Games W-L</th><th class="slate">Game%</th>
         </tr></thead>
         <tbody>
-          <tr><td class="left year">2026</td><td>6</td><td class="win">4</td><td class="loss">2</td><td><span class="pct-badge pct-mid">66.7%</span></td><td>8-6</td><td>57.1%</td><td>60-57</td><td>51.3%</td></tr>
+          <tr><td class="left year">2026</td><td>7</td><td class="win">5</td><td class="loss">2</td><td><span class="pct-badge pct-mid">71.4%</span></td><td>10-6</td><td>62.5%</td><td>68-60</td><td>53.1%</td></tr>
           <tr><td class="left year">2025</td><td>11</td><td class="win">8</td><td class="loss">3</td><td><span class="pct-badge pct-mid">72.7%</span></td><td>17-8</td><td>68.0%</td><td>122-85</td><td>58.9%</td></tr>
           <tr><td class="left year">2024</td><td>9</td><td class="win">8</td><td class="loss">1</td><td><span class="pct-badge pct-high">88.9%</span></td><td>16-2</td><td>88.9%</td><td>108-59</td><td>64.7%</td></tr>
-          <tr class="total-row"><td class="left total-label">Total</td><td class="bold">26</td><td class="win" style="font-weight:700">20</td><td class="loss" style="font-weight:700">6</td><td><span class="pct-badge pct-high">76.9%</span></td><td class="bold">41-16</td><td style="color:#cbd5e1;font-weight:600">71.9%</td><td class="bold">290-201</td><td style="color:#cbd5e1;font-weight:600">59.1%</td></tr>
+          <tr class="total-row"><td class="left total-label">Total</td><td class="bold">27</td><td class="win" style="font-weight:700">21</td><td class="loss" style="font-weight:700">6</td><td><span class="pct-badge pct-high">77.8%</span></td><td class="bold">43-16</td><td style="color:#cbd5e1;font-weight:600">72.9%</td><td class="bold">298-204</td><td style="color:#cbd5e1;font-weight:600">59.4%</td></tr>
         </tbody>
       </table>
     </div>
@@ -283,18 +287,18 @@
       <div class="career-flex">
         <div class="pie-wrap"><canvas id="pieChart"></canvas></div>
         <div style="flex:1">
-          <div class="legend-item"><div class="legend-dot" style="background:#10b981"></div><span class="legend-label">Matches Won</span><span class="legend-value">20</span></div>
+          <div class="legend-item"><div class="legend-dot" style="background:#10b981"></div><span class="legend-label">Matches Won</span><span class="legend-value">21</span></div>
           <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div><span class="legend-label">Matches Lost</span><span class="legend-value">6</span></div>
-          <div class="legend-footer">0 Defaults in 26 matches</div>
+          <div class="legend-footer">0 Defaults in 27 matches</div>
         </div>
       </div>
       <div class="progress">
-        <div class="progress-header"><span class="progress-label">Sets Won</span><span class="progress-value" style="color:#3b82f6">41/57 (71.9%)</span></div>
-        <div class="progress-track"><div class="progress-fill" style="width:71.9%;background:linear-gradient(90deg,#3b82f6,#3b82f688)"></div></div>
+        <div class="progress-header"><span class="progress-label">Sets Won</span><span class="progress-value" style="color:#3b82f6">43/59 (72.9%)</span></div>
+        <div class="progress-track"><div class="progress-fill" style="width:72.9%;background:linear-gradient(90deg,#3b82f6,#3b82f688)"></div></div>
       </div>
       <div class="progress">
-        <div class="progress-header"><span class="progress-label">Games Won</span><span class="progress-value" style="color:#8b5cf6">290/491 (59.1%)</span></div>
-        <div class="progress-track"><div class="progress-fill" style="width:59.1%;background:linear-gradient(90deg,#8b5cf6,#8b5cf688)"></div></div>
+        <div class="progress-header"><span class="progress-label">Games Won</span><span class="progress-value" style="color:#8b5cf6">298/502 (59.4%)</span></div>
+        <div class="progress-track"><div class="progress-fill" style="width:59.4%;background:linear-gradient(90deg,#8b5cf6,#8b5cf688)"></div></div>
       </div>
     </div>
   </div>
@@ -313,8 +317,8 @@
       <div class="card-title">Year-End Projections</div>
       <div class="card-subtitle">Based on current 2026 pace</div>
       <div class="proj-grid">
-        <div class="proj-box"><div class="proj-label">Proj. Matches</div><div class="proj-value" style="color:#f8fafc">13</div><div class="proj-sub">~1.1/month</div></div>
-        <div class="proj-box"><div class="proj-label">Proj. Record</div><div class="proj-value" style="color:#10b981">9-4</div><div class="proj-sub">66.7% win rate</div></div>
+        <div class="proj-box"><div class="proj-label">Proj. Matches</div><div class="proj-value" style="color:#f8fafc">14</div><div class="proj-sub">~1.2/month pace</div></div>
+        <div class="proj-box"><div class="proj-label">Proj. Record</div><div class="proj-value" style="color:#10b981">10-4</div><div class="proj-sub">71.4% win rate</div></div>
       </div>
       <div style="font-size:13px;font-weight:600;color:#cbd5e1;margin-bottom:12px">Milestones</div>
       <div class="milestone"><div><span class="milestone-target">Career 30 Matches</span><span class="milestone-date">Sep 2026</span></div><span class="conf-badge conf-high">High</span></div>
@@ -323,7 +327,7 @@
       <div class="milestone"><div><span class="milestone-target">80% Career Win Rate</span><span class="milestone-date">Needs 5W streak</span></div><span class="conf-badge conf-low">Low</span></div>
       <div class="insight-box">
         <div class="insight-title">Insight</div>
-        <div class="insight-text">2024 was dominant (88.9% W). 2026 started slower (66.7%) stepping up to 4.5 level doubles on clay. Summer schedule ramp-up across 3 active teams could push the win rate back above 70%.</div>
+        <div class="insight-text">Dynamic rating surged to 3.9903 — nearly at the top of the 4.0 range. The 6-2, 6-1 win with Bebiak earned a 4.17 match rating. With 3 active teams this summer, pace is picking up and 2026 win rate has climbed back to 71.4%.</div>
       </div>
     </div>
   </div>
@@ -340,30 +344,31 @@
       </div>
     </div>
     <div class="match-table-header">
-      <span>Date</span><span></span><span>Event</span><span>Score</span>
+      <span>Date</span><span></span><span>Event</span><span>Partner</span><span>Opponents</span><span>Score</span>
     </div>
     <div id="matchList"></div>
   </div>
 
   <div class="footer">
-    Data sourced from <a href="https://www.tennisrecord.com/adult/profile.aspx?playername=Jon%20Caldwell" target="_blank">TennisRecord.com</a> &#x2022; Last updated Jun 2026
+    Data sourced from <a href="https://www.tennisrecord.com/adult/profile.aspx?playername=Jon%20Caldwell" target="_blank">TennisRecord.com</a> &#x2022; Last updated Jun 25, 2026
   </div>
 </div>
 
 <script>
 const allMatches = [
-  { date:"2026-06-01", event:"RCAA-Boodakian 4.5M (clay)", score:"6-4, 6-3", result:"W", type:"Doubles" },
-  { date:"2026-05-25", event:"RCAA-Shaw 4.0M", score:"4-6, 6-3, 6-7(5)", result:"L", type:"Doubles" },
-  { date:"2026-05-18", event:"LIB-Briceno 40s 4.0M", score:"6-4, 6-2", result:"W", type:"Doubles" },
-  { date:"2026-05-14", event:"RCAA-Shaw 4.0M", score:"6-3, 6-4", result:"W", type:"Doubles" },
-  { date:"2026-03-15", event:"LIB-Briceno 40s 4.0M", score:"3-6, 4-6", result:"L", type:"Doubles" },
-  { date:"2026-02-22", event:"LIB-Briceno 40s 4.0M", score:"6-2, 6-4", result:"W", type:"Doubles" },
-  { date:"2025-12-07", event:"4CHIP-Beltran Combo 7.5", score:"6-3, 6-4", result:"W", type:"Doubles" },
-  { date:"2025-11-16", event:"4CHIP-Beltran Combo 7.5", score:"6-4, 7-5", result:"W", type:"Doubles" },
-  { date:"2025-11-02", event:"4CHIP-Beltran Combo 7.5", score:"4-6, 3-6", result:"L", type:"Doubles" },
-  { date:"2025-10-19", event:"4CHIP-Beltran Combo 7.5", score:"6-1, 6-3", result:"W", type:"Doubles" },
-  { date:"2025-10-12", event:"4CHIP-Beltran Combo 7.5", score:"6-2, 6-1", result:"W", type:"Doubles" },
-  { date:"2025-10-05", event:"4CHIP-Beltran Combo 7.5", score:"6-4, 6-2", result:"W", type:"Doubles" },
+  { date:"2026-06-16", event:"RCAA-Shaw 18s 4.0M F2", score:"6-2, 6-1", result:"W", partner:"Jeremy Bebiak (3.95)", opponents:"Joseph Arend (3.76) / Todd Lucas (3.98)", matchRating:"4.17" },
+  { date:"2026-06-01", event:"RCAA-Boodakian 4.5M (clay)", score:"6-4, 6-3", result:"W", partner:"", opponents:"", matchRating:"" },
+  { date:"2026-05-25", event:"RCAA-Shaw 4.0M", score:"4-6, 6-3, 6-7(5)", result:"L", partner:"", opponents:"", matchRating:"" },
+  { date:"2026-05-18", event:"LIB-Briceno 40s 4.0M", score:"6-4, 6-2", result:"W", partner:"", opponents:"", matchRating:"" },
+  { date:"2026-05-14", event:"RCAA-Shaw 4.0M", score:"6-3, 6-4", result:"W", partner:"", opponents:"", matchRating:"" },
+  { date:"2026-03-15", event:"LIB-Briceno 40s 4.0M", score:"3-6, 4-6", result:"L", partner:"", opponents:"", matchRating:"" },
+  { date:"2026-02-22", event:"LIB-Briceno 40s 4.0M", score:"6-2, 6-4", result:"W", partner:"", opponents:"", matchRating:"" },
+  { date:"2025-12-07", event:"4CHIP-Beltran Combo 7.5", score:"6-3, 6-4", result:"W", partner:"", opponents:"", matchRating:"" },
+  { date:"2025-11-16", event:"4CHIP-Beltran Combo 7.5", score:"6-4, 7-5", result:"W", partner:"", opponents:"", matchRating:"" },
+  { date:"2025-11-02", event:"4CHIP-Beltran Combo 7.5", score:"4-6, 3-6", result:"L", partner:"", opponents:"", matchRating:"" },
+  { date:"2025-10-19", event:"4CHIP-Beltran Combo 7.5", score:"6-1, 6-3", result:"W", partner:"", opponents:"", matchRating:"" },
+  { date:"2025-10-12", event:"4CHIP-Beltran Combo 7.5", score:"6-2, 6-1", result:"W", partner:"", opponents:"", matchRating:"" },
+  { date:"2025-10-05", event:"4CHIP-Beltran Combo 7.5", score:"6-4, 6-2", result:"W", partner:"", opponents:"", matchRating:"" },
 ];
 
 function renderMatches() {
@@ -377,6 +382,8 @@ function renderMatches() {
       <span class="match-date">${ds}</span>
       <span class="result-badge ${isWin ? 'result-w' : 'result-l'}">${m.result}</span>
       <span class="match-event">${m.event}</span>
+      <span class="match-partner">${m.partner || '—'}</span>
+      <span class="match-opponents">${m.opponents || '—'}</span>
       <span class="match-score">${m.score}</span>
     </div>`;
   }).join('');
@@ -395,7 +402,7 @@ new Chart(document.getElementById('ratingChart'), {
     labels: ["Jan '24","Jun '24","Dec '24","Jun '25","Dec '25","Mar '26","Jun '26"],
     datasets: [{
       label: 'Dynamic Rating',
-      data: [3.65, 3.78, 3.92, 3.85, 3.90, 3.85, 3.88],
+      data: [3.65, 3.78, 3.92, 3.85, 3.90, 3.85, 3.99],
       borderColor: '#10b981', backgroundColor: 'rgba(16,185,129,0.1)',
       borderWidth: 2.5, pointRadius: 4, pointBackgroundColor: '#10b981',
       fill: true, tension: 0.3,
@@ -414,7 +421,7 @@ new Chart(document.getElementById('activityChart'), {
   data: {
     labels: ["Oct '25","Nov '25","Dec '25","Feb '26","Mar '26","May '26","Jun '26"],
     datasets: [
-      { label: 'Wins', data: [3,1,1,1,0,3,1], backgroundColor: '#10b981', borderRadius: { topLeft: 0, topRight: 0 } },
+      { label: 'Wins', data: [3,1,1,1,0,3,2], backgroundColor: '#10b981', borderRadius: { topLeft: 0, topRight: 0 } },
       { label: 'Losses', data: [0,1,0,0,1,0,0], backgroundColor: '#ef4444', borderRadius: { topLeft: 4, topRight: 4 } },
     ]
   },
@@ -431,9 +438,9 @@ new Chart(document.getElementById('winRateChart'), {
   data: {
     labels: ['2024','2025','2026'],
     datasets: [
-      { label: 'Match W%', data: [88.9, 72.7, 66.7], backgroundColor: '#10b981', borderRadius: 4 },
-      { label: 'Set W%', data: [88.9, 68.0, 57.1], backgroundColor: '#3b82f6', borderRadius: 4 },
-      { label: 'Game W%', data: [64.7, 58.9, 51.3], backgroundColor: '#8b5cf6', borderRadius: 4 },
+      { label: 'Match W%', data: [88.9, 72.7, 71.4], backgroundColor: '#10b981', borderRadius: 4 },
+      { label: 'Set W%', data: [88.9, 68.0, 62.5], backgroundColor: '#3b82f6', borderRadius: 4 },
+      { label: 'Game W%', data: [64.7, 58.9, 53.1], backgroundColor: '#8b5cf6', borderRadius: 4 },
     ]
   },
   options: {
@@ -448,7 +455,7 @@ new Chart(document.getElementById('pieChart'), {
   type: 'doughnut',
   data: {
     labels: ['Won','Lost'],
-    datasets: [{ data: [20, 6], backgroundColor: ['#10b981','#ef4444'], borderWidth: 0, spacing: 4 }]
+    datasets: [{ data: [21, 6], backgroundColor: ['#10b981','#ef4444'], borderWidth: 0, spacing: 4 }]
   },
   options: {
     responsive: true, maintainAspectRatio: false, cutout: '60%',
